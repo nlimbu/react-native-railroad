@@ -1,0 +1,29 @@
+{
+  "name": "react-native-railroad",
+  "version": "1.0.0",
+  "description": "A simple railroad component.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softCompound/react-native-railroad.git"
+  },
+  "keywords": [
+    "railroad"
+  ],
+  "author": "Nagendra Limbu",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">= 15.x",
+    "react-native": ">= 0.47.x"
+  },
+  "bugs": {
+    "url": "https://github.com/softCompound/react-native-railroad/issues"
+  },
+  "homepage": "https://github.com/softCompound/react-native-railroad#readme",
+  "devDependencies": {
+    "babel-preset-react-native": "^4.0.0"
+  }
+}
