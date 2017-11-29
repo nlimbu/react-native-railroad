@@ -9,10 +9,11 @@
 ```
 npm install --save react-native-railroad
 ```
-After installing the package simply import it and use it as a RailRoad component.
+After installing the package simply import it and use it as a RailRoad component. 
 
+RailRoad is a stateless functional component.
 ```
-import RailRoad from 'react-native-railroad';
+import { RailRoad } from 'react-native-railroad';
 
 <RailRoad 
     index={2}
