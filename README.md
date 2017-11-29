@@ -1,6 +1,6 @@
 # react-native-railroad
 
-#### This is a simple RailRoad component for react-native applications using `<Animated.View />` element that can be configured through props.
+#### This is a simple RailRoad component for react-native applications using `<Animated.View />` that can be configured through props.
 
 [Image Link to the Component in use](res/railroad.png)
 
