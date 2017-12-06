@@ -4,6 +4,8 @@
 
 ![](res/railroad.png)
 
+![](res/circular_railroad.png)
+
 ## Usage
 
 ```
