@@ -2,7 +2,7 @@
 
 #### This is a simple RailRoad component for react-native applications using `<Animated.View />` that can be configured through props.
 
-[Image Link to the Component in use](res/railroad.png)
+![](res/railroad.png)
 
 ## Usage
 
@@ -35,6 +35,6 @@ index|2|It marks the stages in the railroad. For a value of index=2 on a max_ind
 shape|'circle'|Currently only two shapes can be used i.e. 'line' and  'circle'.
 circleSize|10|Must be provided if shape has been defined as 'circle'.
 mode|'exclusive' or 'inclusive'| 'Inclusive' mode will render all the shapes with the provided colors till the index value that marks the current stage in the railroad whereas 'exclusive' mode only colors the shape at index value and the remaining shapes wont be styled.
-emptyFill|"#ccc"|If a color is provided the empty shapes will be styled with it or else an opaque style will be applied with a borderWidth of 1 and color value of '#ccc'.
+emptyFill|"#ccc"|If a color is provided the empty shapes will be styled with it or else an opaque style will be applied with a borderWidth of 1 and color value of '#adad85'.
 
 
