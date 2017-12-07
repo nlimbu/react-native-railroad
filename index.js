@@ -6,26 +6,26 @@ const GREY = '#adad85';
 const OPAQUE = 'rgba(0,0,0,0)';
 
 export const RailRoad = (props) => {
-    const default_width = (Dimensions.get('window').width / props.max_index) - 12;
-    const { max_index, index, color = '#e6e600', shape, mode, width = default_width, height = 4, circleSize, emptyFill } = props;
-    const shape_style =
+    const defaultWidth = (Dimensions.get('window').width / props.maxIndex) - 12;
+    const { maxIndex, index, color = '#e6e600', shape, mode, width = defaultWidth, height = 4, circleSize, emptyFill } = props;
+    const shapeStyle =
         shape === 'line' ?
             { width, height, marginHorizontal: 1 } :
             shape === 'circle' ?
                 { borderRadius: circleSize / 2, width: circleSize, height: circleSize, marginHorizontal: circleSize / 2 } :
                 0;
 
-    let rail_styles = [];
-    for (let i = 1; i <= max_index; i++) {
+    let railStyles = [];
+    for (let i = 1; i <= maxIndex; i++) {
         const style = mode === 'inclusive' ?
             index >= i ?
-                { ...shape_style, backgroundColor: color } :
-                emptyFill ? { ...shape_style, backgroundColor: emptyFill } : { ...shape_style, backgroundColor: OPAQUE, borderWidth: 1, borderColor: GREY } :
+                { ...shapeStyle, backgroundColor: color } :
+                emptyFill ? { ...shapeStyle, backgroundColor: emptyFill } : { ...shapeStyle, backgroundColor: OPAQUE, borderWidth: 1, borderColor: GREY } :
             index === i ?
-                { ...shape_style, backgroundColor: color } :
-                emptyFill ? { ...shape_style, backgroundColor: emptyFill } : { ...shape_style, backgroundColor: OPAQUE, borderWidth: 1, borderColor: GREY };
+                { ...shapeStyle, backgroundColor: color } :
+                emptyFill ? { ...shapeStyle, backgroundColor: emptyFill } : { ...shapeStyle, backgroundColor: OPAQUE, borderWidth: 1, borderColor: GREY };
 
-        rail_styles.push({
+        railStyles.push({
             alignSelf: 'center',
             ...style
         });
@@ -34,7 +34,7 @@ export const RailRoad = (props) => {
     return (
         <View style={styles.railroad} >
             {
-                rail_styles.map((style, i) => {
+                railStyles.map((style, i) => {
                     return (
                         <Animated.View key={i} style={style} />
                     )
@@ -45,7 +45,7 @@ export const RailRoad = (props) => {
 }
 
 RailRoad.propTypes = {
-    max_index: PropTypes.number.isRequired,
+    maxIndex: PropTypes.number.isRequired,
     index: PropTypes.number.isRequired,
     emptyFill: PropTypes.string,
     color: PropTypes.string,
