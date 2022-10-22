@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Animated, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 
+
 const GREY = '#adad85';
 const OPAQUE = 'rgba(0,0,0,0)';
 
